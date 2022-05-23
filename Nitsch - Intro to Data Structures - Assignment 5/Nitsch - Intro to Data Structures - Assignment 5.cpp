@@ -78,6 +78,7 @@ void stars(int x)
     }
 }
 
+//Merge
 void merge(int array[], int const left, int const mid, int const right)
 {
     int const subArrayOne = mid - left + 1;
@@ -127,6 +128,7 @@ void merge(int array[], int const left, int const mid, int const right)
     }
 }
 
+//MergeSort
 void mergeSort(int array[], int const begin, int const end)
 {
     if (begin >= end)
@@ -138,12 +140,14 @@ void mergeSort(int array[], int const begin, int const end)
     merge(array, begin, mid, end);
 }
 
+//Displays the array
 void printArray(int A[], int size)
 {
     for (int i = 0; i < size; i++)
         cout << A[i] << " ";
 }
 
+//Binary search
 int binarySearch(const int list[], int length, const int& item)
 {
     int first = 0, mid, last = length - 1;
